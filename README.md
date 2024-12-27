@@ -148,12 +148,12 @@ The static power dissipation of the inverter has been simulated with results sho
 #### Dynamic Power Consumption  
 - **Definition:** Power dissipated during switching due to charging and discharging of load capacitance.  
 - **Formula:**  
-   P<sub>dynamic<sub> = a\*C<sub>load<sub>\*V<sub>dd<sub>^2\*f  
+   P<sub>dynamic</sub> = a\*C<sub>load</sub>\*V<sub>dd</sub>^2\*f  
   Where:  
   - *a*: Activity factor (probability of switching)  
   - *C<sub>load</sub>*: Load capacitance  
-  - *V<sub>dd</sub>*: Supply voltage  
-  - *f*: Frequency of operation  
+  - V<sub>dd</sub>: Supply voltage  
+  - f: Frequency of operation 
 - **Key Observations:**  
   - Dynamic power dominates overall power consumption in CMOS circuits.  
   - It is influenced significantly by the load capacitance and operating frequency.  
