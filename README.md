@@ -3,8 +3,9 @@
 ## Overview  
 This repository focuses on the detailed characterization of a CMOS inverter. The study includes:  
 1. **Switching Threshold Point** analysis using the Voltage Transfer Characteristics (VTC).  
-2. **Propagation Delay** calculation.  
-3. Evaluation of **dynamic and static power consumption** in CMOS inverters.  
+2. **Noise Margin** measurement.
+3.  **Propagation Delay** calculation.  
+4. Evaluation of **dynamic and static power consumption** in CMOS inverters.  
 
 ## Table of Contents  
 1. [Introduction to CMOS Inverter](#introduction-to-cmos-inverter)  
@@ -211,6 +212,6 @@ This study emphasizes the characterization of a CMOS inverter, providing critica
 ## Acknowledgements
 Special thanks to [Cadence Virtuoso](https://www.cadence.com/en_US/home/tools/custom-ic-analog-rf-design/virtuoso-studio.html) team for providing an advanced platform for analog design & simulation. Additionally, gratitude is extended to [IIT Roorkee July 2018](https://youtube.com/@iitroorkeejuly?si=aMPGdDgZXCj2mn84) channel for providing such an informative lecture on [CMOS Digital VLSI Design](https://youtube.com/playlist?list=PLLy_2iUCG87Bdulp9brz9AcvW_TnFCUmM&si=zkWH74foxKOikoun). 
 
-Feel free to explore the repository for insights into the design and implementation of LDO Volateg Regulator. Contributions and feedback are welcome!
+Feel free to explore the repository for insights into the design and characterization of CMOS Inverter. Contributions and feedback are welcome!
 
 ***If you find this repository helpful, please consider giving it a ⭐!***
