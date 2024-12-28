@@ -9,6 +9,7 @@ This repository focuses on the detailed characterization of a CMOS inverter. The
 
 ## Table of Contents  
 1. [Introduction to CMOS Inverter](#introduction-to-cmos-inverter)  
+    - [How Has the CMOS Inverter Changed the World?](#How-Has-the-CMOS-Inverter-Changed-the-World?)
 2. [Pull-Up and Pull-Down Networks](#pull-up-and-pull-down-networks)  
 3. [Significance of CMOS Circuits in VLSI](#significance-of-cmos-circuits-in-vlsi)
 4. [Tools and Technology](#tools-and-technology)  
@@ -26,7 +27,17 @@ A CMOS (Complementary Metal-Oxide-Semiconductor) inverter is a fundamental digit
 - **PMOS**: A p-type MOSFET that operates as the pull-up network.  
 - **NMOS**: An n-type MOSFET that operates as the pull-down network.  
 
-The complementary action ensures efficient switching between logic levels while consuming minimal power in steady states.  
+The complementary action ensures efficient switching between logic levels while consuming minimal power in steady states.
+
+### How Has the CMOS Inverter Changed the World?
+The CMOS inverter has revolutionized technology and society by enabling:
+
+1. **Digital Revolution**: It's the cornerstone of integrated circuits (ICs) used in computers, smartphones, and countless electronic devices.
+2. **Miniaturization**: Allowed the creation of compact, portable gadgets by reducing size and power consumption.
+3. **Global Connectivity**: Supports technologies that power the internet, telecommunications, and networking.
+4. **Automation and AI**: Forms the foundation of processors used in robotics, machine learning, and artificial intelligence systems.
+
+In essence, the CMOS inverter has laid the groundwork for the modern digital age, transforming industries and shaping the way we live and interact with the world.
 
 ## Pull-Up and Pull-Down Networks  
 - **Pull-Up Network (PUN):**  
@@ -84,6 +95,8 @@ The VTC curve for the CMOS inverter has been simulated and plotted using Cadence
 | :---: | 
 | Fig 4: Switching Threshold parametric Analysis |
 
+***Explaination**: We design the switching threshold of a CMOS inverter to be at **Vdd/2** (here, 900mV) because it ensures the inverter operates symmetrically, making it equally responsive to both high (logic 1) and low (logic 0) inputs. This symmetry maximizes noise margins, so the circuit can tolerate input variations or noise without errors. It also ensures both the PMOS and NMOS transistors share the load efficiently, leading to balanced and reliable operation. In essence, a Vdd/2 threshold keeps the inverter **robust and predictable**, which is exactly what we need in any practical design.*
+
 ### Noise Margin   
 - **Definition:** Noise margin quantifies the tolerance of a digital circuit to noise, ensuring proper logic level interpretation. It is defined as the difference between the logic levels that the inverter can reliably output and the levels it can correctly interpret as input.  
 - **Key Parameters:**  
@@ -101,6 +114,8 @@ The noise margin characteristics have been extracted from the VTC curve and calc
 | ![CMOS Inv NM](https://github.com/HarshitSri-Analog/CMOS-Inverter-Characterization/blob/main/CMOS%20Inverter/CMOS%20Inverter_VTC_NoiseMarginFinal.png) | 
 | :---: | 
 | Fig 5: Noise Margin of CMOS Inverter |
+
+***Explaination**: We want the noise margin of an inverter to be as high as possible because it directly affects how well the inverter can reject unwanted noise or disturbances in the input signal. A high noise margin means the circuit can tolerate larger fluctuations or interference without misinterpreting the logic level, ensuring reliable operation even in noisy environments. This is especially critical in real-world applications where signals might degrade over long distances or due to crosstalk. In short, a higher noise margin makes the inverter more robust, reliable, and less prone to errors, which is exactly what we aim for in a good design.*
 
 ### Propagation Delay  
 - **Definition:** Propagation delay measures the time taken for the output to respond to a change in input. It consists of two components:  
@@ -128,6 +143,8 @@ Propagation delay components (t<sub>plh</sub> and t<sub>phl</sub>) have been sim
 | ![CMOS Inv tpd](https://github.com/HarshitSri-Analog/CMOS-Inverter-Characterization/blob/main/CMOS%20Inverter/CMOS%20Inverter_tpd%20parametric.png) | 
 | :---: | 
 | Fig 8: t<sub>pd</sub> delay of CMOS Inverter (Paramteric Analysis) |
+
+***Explaination**: We aim to minimize the propagation delay in CMOS circuits because it determines how quickly the circuit can respond to input changes and process signals. A lower delay means faster operation, which is critical for high-speed applications like processors, communication systems, and modern electronics. It ensures the circuit can handle high data rates, meet timing requirements, and reduce overall latency in the system. In essence, minimizing propagation delay improves performance, efficiency, and the ability to scale for advanced applications, which is always the goal in circuit design.*
 
 ### Power Consumption  
 
@@ -166,6 +183,8 @@ Dynamic power consumption has been quantified for various load capacitances and 
 | ![CMOS Inv Pdynamic](https://github.com/HarshitSri-Analog/CMOS-Inverter-Characterization/blob/main/CMOS%20Inverter/CMOS%20Inverter_power%20dynamic%20parametric.png) | 
 | :---: | 
 | Fig 10: P<sub>dynamic</sub> of CMOS Inverter |
+
+***Explaination**: We need to minimize the power consumption of CMOS circuits because it directly impacts the efficiency and practicality of our designs. Lower power consumption means less heat generation, longer battery life in portable devices, and reduced energy costs, which are critical for everything from smartphones to massive data centers. It also allows us to pack more functionality into a single chip without worrying about overheating or excessive energy demands. In short, minimizing power consumption is essential for creating efficient, sustainable, and high-performance systems.*
 
 ## Observation  
 
